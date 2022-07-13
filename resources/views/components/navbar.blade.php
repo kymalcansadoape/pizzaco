@@ -1,24 +1,35 @@
-<nav class="w-full flex fixed top-0 z-100 justify-between mx-auto md:px-[90px] md:pt-[25px] items-center">
+<nav class="w-full flex fixed duration-[0.7s] top-0 z-100 justify-between text-white mx-auto md:px-[90px] md:pt-[25px] items-center" :class="{ 'bg-white text-black shadow transition duration-[0.7s] md:pt-[15px]' : showBar }"
+@scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
     <div class="w-[190px]">
         <img class="w-full" src="{{ asset('img/img/logo.png') }}" alt="Logo">
     </div>
-    <div class="w-[50%] flex justify-center space-x-[50px] text-[25px] text-white font-light">
-        <div>
-            <p>Home<span
-                    class="ml-[5px] inline-block border-r-[3px] rounded-br-[4.5px] border-b-[3px] border-white w-[18px] h-[18px] rotate-45 -translate-y-[3.5px]"></span>
-            </p>
+    <div class="w-[50%] flex justify-center space-x-[50px] text-[25px] font-light">
+        <div x-data="{open: false}" @mouseleave="open = false" >
+            <a class="decoration-none" @mouseover="open = true"  href="#">
+                Home
+                <span class="ml-[5px] inline-block border-r-[3px] rounded-br-[4.5px] border-b-[3px] border-white w-[18px] h-[18px] rotate-45 -translate-y-[3.5px]"></span>
+            </a>
+            <div x-show="open" class="bg-white text-black text-[16px] px-2 py-1 rounded-md">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
         <div>
-            <p>Menu</p>
+            <a class="decoration-none" href="#">Menu</a>
         </div>
         <div>
-            <p>About
+            <a class="decoration-none" href="#">About
                 <span class="ml-[5px] inline-block border-r-[3px] rounded-br-[4.5px]
                 border-b-[3px] border-white w-[18px] h-[18px] rotate-45 -translate-y-[3.5px]"></span>
-            </p>
+            </a>
         </div>
         <div>
-            <p>Contact</p>
+            <a class="decoration-none" href="#">Contact</a>
         </div>
     </div>
     <div class="md:w-[190px] flex justify-end">

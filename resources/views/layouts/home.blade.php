@@ -12,7 +12,7 @@
     <title>@yield('title') Pizza Co</title>
 </head>
 <style>*{font-family: 'Poppins', sans-serif ;}</style>
-<body>
+<body class="no-scrollbar leading-normal tracking-normal"  x-data="{ showBar: false }">
         <nav>
             @include('components.navbar')
         </nav>

@@ -1,7 +1,7 @@
 <section id="hero">
     <div class="relative w-full h-full flex justify-center items-center">
-        <div class="absolute -z-10">
-            <img class="brightness-[.60]" src="{{asset('img/img/hero.png')}}" alt="" height="770px">
+        <div class="absolute -z-10 h-full">
+            <img class="brightness-[.60] object-cover h-full " src="{{asset('img/img/hero.png')}}" alt="">
         </div>
         <div class="text-center">
             <p class="text-[107px] font-semibold text-[#FB8F2D]">Pizza Co.</p>
