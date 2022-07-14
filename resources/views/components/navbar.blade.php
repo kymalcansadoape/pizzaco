@@ -8,7 +8,7 @@
             <a class="decoration-none" @mouseover="open = true"  href="#">
                 Home
                 <span class="ml-[5px] inline-block border-r-[2.5px] rounded-br-[4.5px] border-b-[2.5px] border-white w-[15px] h-[15px] rotate-45 -translate-y-[3.5px]"
-                @scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
+                @scroll.window="showBar = (window.pageYOffset > 50) ? true : false"
                 :class="{ 'border-black' : showBar }"
                 ></span>
             </a>
@@ -36,7 +36,7 @@
             <a class="decoration-none" @mouseover="open = true"  href="#">
                 About
                 <span class="ml-[5px] inline-block border-r-[2.5px] rounded-br-[4.5px] border-b-[2.5px] border-white w-[15px] h-[15px] rotate-45 -translate-y-[3.5px]"
-                @scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
+                @scroll.window="showBar = (window.pageYOffset > 50) ? true : false"
                 :class="{ 'border-black' : showBar }"
                 ></span>
             </a>
