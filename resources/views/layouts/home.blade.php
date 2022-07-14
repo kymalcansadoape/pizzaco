@@ -11,8 +11,10 @@
     @vite('resources/css/app.css')
     <title>@yield('title') Pizza Co</title>
 </head>
-<style>*{font-family: 'Poppins', sans-serif ;}</style>
-<body class="no-scrollbar leading-normal tracking-normal"  x-data="{ showBar: false }">
+<style>
+*{font-family: 'Poppins', sans-serif ;}
+::-webkit-scrollbar {display: none;}</style>
+<body class="leading-normal tracking-normal no-scrollbar"  x-data="{ showBar: false }">
         <nav>
             @include('components.navbar')
         </nav>
