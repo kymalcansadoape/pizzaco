@@ -1,14 +1,14 @@
-<section id="promotion" class="w-full "> {{-- md:px-[90px] --}}
+<section id="features" class="w-full "> {{-- md:px-[90px] --}}
     <div class="relative w-full h-full">
-        <div class="absolute -z-10 h-full w-full">
-            <img class="object-cover h-full w-full absolute opacity-80" src="{{ asset('img/img/promotion-1.png') }}" alt="">
+        <div class="absolute w-full h-full -z-10">
+            <img class="absolute object-cover w-full h-full opacity-80" src="{{ asset('img/img/promotion-1.png') }}" alt="">
         </div>
         <div class="md:px-[90px] pt-20 pb-10">
             <p class="text-6xl font-bold text-[#FB8F2D]">Why Buy Our Food?</p>
         </div>
         <div class="absolute md:px-[90px]  w-full">
             <div class="grid grid-cols-3 w-full  gap-[30px]">
-                <div class="bg-zinc-100/70 backdrop-blur-lg p-8 rounded-lg">
+                <div class="p-8 rounded-lg bg-zinc-100/70 backdrop-blur-lg">
                     <div class="flex w-full justify-between text-[#FB8F2D]">
                         <div class="text-3xl font-bold">Delicious</div>
                         <div class="">
@@ -25,7 +25,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="bg-zinc-100/70 backdrop-blur-lg p-8 rounded-lg">
+                <div class="p-8 rounded-lg bg-zinc-100/70 backdrop-blur-lg">
                     <div class="flex w-full justify-between text-[#FB8F2D]">
                         <div class="text-3xl font-bold">Delicious</div>
                         <div class="">
@@ -42,7 +42,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="bg-zinc-100/70 backdrop-blur-lg p-8 rounded-lg">
+                <div class="p-8 rounded-lg bg-zinc-100/70 backdrop-blur-lg">
                     <div class="flex w-full justify-between text-[#FB8F2D]">
                         <div class="text-3xl font-bold">Delicious</div>
                         <div class="">
@@ -59,7 +59,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="bg-zinc-100/70 backdrop-blur-lg p-8 rounded-lg">
+                <div class="p-8 rounded-lg bg-zinc-100/70 backdrop-blur-lg">
                     <div class="flex w-full justify-between text-[#FB8F2D]">
                         <div class="text-3xl font-bold">Delicious</div>
                         <div class="">
@@ -76,7 +76,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="bg-zinc-100/70 backdrop-blur-lg p-8 rounded-lg">
+                <div class="p-8 rounded-lg bg-zinc-100/70 backdrop-blur-lg">
                     <div class="flex w-full justify-between text-[#FB8F2D]">
                         <div class="text-3xl font-bold">Delicious</div>
                         <div class="">
@@ -93,7 +93,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="bg-zinc-100/70 backdrop-blur-lg p-8 rounded-lg">
+                <div class="p-8 rounded-lg bg-zinc-100/70 backdrop-blur-lg">
                     <div class="flex w-full justify-between text-[#FB8F2D]">
                         <div class="text-3xl font-bold">Delicious</div>
                         <div class="">
