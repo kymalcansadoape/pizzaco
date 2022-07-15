@@ -1,13 +1,13 @@
-<section id="features" class="w-full mb-9 "> {{-- md:px-[90px] --}}
-    <div class="relative w-full h-full">
+<section id="features" class="relative w-full lg:h-[110vh] mb-9"> {{-- md:px-[90px] --}}
+    <div class="relative w-full">
         <div class="absolute w-full h-[100vh] -z-10">
-            <img class="absolute w-full h-full mt-10 opacity-80" src="{{ asset('img/img/promotion-1.png') }}" alt="">
+            <img class="absolute object-cover w-full h-full mt-10 opacity-80" src="{{ asset('img/img/promotion-1.png') }}" alt="">
         </div>
         <div class="md:px-[90px] pt-20 pb-10">
             <p class="text-6xl font-bold text-[#FB8F2D]">Why Buy Our Food?</p>
         </div>
-        <div class="absolute md:px-[90px]  w-full">
-            <div class="grid grid-cols-3 w-full  gap-[30px]">
+        <div class="md:px-[90px]  w-full">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full  gap-[30px]">
                 <div class="p-8 rounded-lg bg-slate-100/70 backdrop-blur-lg">
                     <div class="flex w-full justify-between text-[#FB8F2D]">
                         <div class="text-3xl font-bold">Delicious</div>

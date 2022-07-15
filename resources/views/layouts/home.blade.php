@@ -15,17 +15,12 @@
 *{font-family: 'Poppins', sans-serif ;}
 ::-webkit-scrollbar {display: none;}</style>
 <body class="leading-normal tracking-normal no-scrollbar"  x-data="{ showBar: false }">
-        <nav>
             @include('components.navbar')
-        </nav>
+    
         <main>
-            @yield  ('content')
+            @yield('content')
         </main>
-        <section>
-            @include('components.subscription-cta')
-        </section>
-        <section>
+       
             @include('components.footer')
-        </section>
 </body>
 </html>

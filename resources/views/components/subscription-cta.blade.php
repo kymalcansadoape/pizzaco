@@ -1,5 +1,5 @@
 <section class="bg-[#FB8F2D] py-16 md:px-[90px]">
-    <div class="flex justify-between w-full">
+    <div class="flex flex-col justify-between w-full md:flex-row">
         <div class="w-1/2 text-white ">
             <p class="text-xl font-light">Get updates on our new menus</p>
             <p class="text-5xl font-semibold">Subscribe</p>

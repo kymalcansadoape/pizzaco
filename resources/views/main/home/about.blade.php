@@ -1,6 +1,6 @@
-<section id="about" class="flex items-center w-full h-[110vh]">
-    <div class=" flex w-full md:pl-[90px] h-[65%]">
-        <div class="w-1/2 pr-20">
+<section id="about" class="flex items-center w-full lg:h-[110vh]">
+    <div class=" flex flex-col lg:flex-row w-full md:pl-[90px] h-[65%]">
+        <div class="pr-20 lg:w-1/2">
             <p class="text-[3.2rem] font-bold leading-[1] text-[#FB8F2D]">We bring families and friends together</p>
             <div class="text-xl pr-7">
                 <p class="mt-4">
@@ -17,7 +17,7 @@
             </div>
             <a href="" class="text-[#FB8F2D] text-[18px] font-semibold mt-8 rounded-[5px] inline-block px-[16px] py-[8px] border-[#FB8F2D] border-[1px]">More About Us</a>
         </div>
-        <div class="w-1/2">
+        <div class="lg:w-1/2">
             <div class="">
                 <img class="w-auto h-full bg-cover rounded-2xl" src="{{ asset('img/img/pizza co.png')}}" alt="">
             </div>
