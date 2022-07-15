@@ -22,7 +22,7 @@
             x-transition:leave-end="opacity-0 scale-90">
                 <ul>
                     <li><a href="{{ route('home') }}#features">Features</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="{{ route('home') }}#about">About</a></li>
                     <li><a href="#">Testimonials</a></li>
                     <li><a href="#">Best Sellers</a></li>
                     <li><a href="#">Contact</a></li>

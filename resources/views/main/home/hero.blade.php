@@ -11,8 +11,7 @@
             </div>
             <button class="bg-[#FB8F2D] text-white font-semibold rounded-[5px] text-[20px] px-[20px] py-[10px]
             transition duration-200 ease-in-out
-            hover:scale-110 hover:transition hover:duration-200
-            ">Order Now</button>
+            hover:scale-110 hover:transition hover:duration-200">Order Now</button>
         </div>
     </div>
 </section>

@@ -22,7 +22,7 @@
             @yield  ('content')
         </main>
         <section>
-            @include('components.subsciption')
+            @include('components.subscription-cta')
         </section>
         <section>
             @include('components.footer')
