@@ -1,1 +1,5 @@
-<section>hero menu</section>
+<section>
+    <div>
+        <img src="{{}}" alt="">
+    </div>
+</section>

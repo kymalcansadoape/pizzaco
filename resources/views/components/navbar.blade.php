@@ -1,11 +1,11 @@
-<nav class="w-full flex fixed duration-[0.7s] top-0 z-100 justify-between text-white mx-auto md:px-[90px] md:pt-[25px] items-center" :class="{ 'bg-white text-black transition duration-[0.7s] md:pt-[15px]' : showBar }"
+<nav class="w-full flex fixed duration-[0.7s] top-0 z-[9999] justify-between text-white mx-auto md:px-[90px] md:pt-[25px] items-center" :class="{ 'bg-white text-black transition duration-[0.7s] md:pt-[15px]' : showBar }"
 @scroll.window="showBar = (window.pageYOffset > 50) ? true : false">
     <div class="w-[190px]">
         <img class="w-full" src="{{ asset('img/img/logo.png') }}" alt="Logo">
     </div>
     <div class="w-[50%] flex justify-center space-x-[50px] text-[25px] font-light">
         <div x-data="{open: false}" @mouseleave="open = false" >
-            <a class="decoration-none" @mouseover="open = true"  href="#">
+            <a class="decoration-none" @mouseover="open = true"  href="{{ route('home') }}">
                 Home
                 <span class="ml-[5px] inline-block border-r-[2.5px] rounded-br-[4.5px] border-b-[2.5px] border-white w-[15px] h-[15px] rotate-45 -translate-y-[3.5px]"
                 @scroll.window="showBar = (window.pageYOffset > 50) ? true : false"
@@ -22,10 +22,10 @@
             x-transition:leave-end="opacity-0 scale-90">
                 <ul>
                     <li><a href="{{ route('home') }}#features">Features</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Best Sellers</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{ route('home') }}#about">About</a></li>
+                    <li><a href="{{ route('home') }}#best_sellers">Testimonials</a></li>
+                    <li><a href="{{ route('home') }}#best_sellers">Best Sellers</a></li>
+                    <li><a href="{{ route('home') }}#homeContact">Contact</a></li>
                 </ul>
             </div>
         </div>

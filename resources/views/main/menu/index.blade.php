@@ -3,3 +3,6 @@
 @section('content')
 
 @include('main.menu.hero')
+
+
+@include('components.subscription-cta')
