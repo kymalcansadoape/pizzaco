@@ -1,7 +1,7 @@
 <section id="features" class="relative w-full lg:h-[110vh] mb-9"> {{-- md:px-[90px] --}}
     <div class="relative w-full">
         <div class="absolute w-full h-[100vh] -z-10">
-            <img class="absolute object-cover w-full h-full mt-10 opacity-80" src="{{ asset('img/img/promotion-1.png') }}" alt="">
+            <img class="absolute w-full h-full mt-10 opacity-80" src="{{ asset('img/img/promotion-1.png') }}" alt="">
         </div>
         <div class="md:px-[90px] pt-20 pb-10">
             <p class="text-6xl font-bold text-[#FB8F2D]">Why Buy Our Food?</p>
