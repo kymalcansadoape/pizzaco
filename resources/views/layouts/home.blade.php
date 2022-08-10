@@ -16,16 +16,18 @@
 </head>
 <style>
 *{
-    font-family: 'Poppins', sans-serif ;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-button[data-action=stop]{
+    button[data-action='stop'] {
     display: none;
-}
+    }
 #tns1 > .tns-item{
     padding-right: 0;
 }
-::-webkit-scrollbar {display: none;}
+::-webkit-scrollbar {
+    display: none;
+    }
 </style>
 <body class="leading-normal tracking-normal no-scrollbar"  x-data="{ showBar: false }">
             @include('components.navbar')

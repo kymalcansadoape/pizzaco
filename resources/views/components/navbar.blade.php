@@ -29,8 +29,28 @@
                 </ul>
             </div>
         </div>
-        <div>
-            <a class="decoration-none" href="{{route('menu')}}">Menu</a>
+        <div x-data="{open: false}" @mouseleave="open = false" >
+            <a class="decoration-none" @mouseover="open = true"  href="{{ route('menu') }}">
+                Menu
+                <span class="ml-[5px] inline-block border-r-[2.5px] rounded-br-[4.5px] border-b-[2.5px] border-white w-[15px] h-[15px] rotate-45 -translate-y-[3.5px]"
+                @scroll.window="showBar = (window.pageYOffset > 50) ? true : false"
+                :class="{ 'border-black' : showBar }"
+                ></span>
+            </a>
+            <div class="bg-slate-100/80 backdrop-blur-lg absolute text-black text-[16px] px-2 py-1 rounded-md"
+            x-show="open"
+            x-transition:enter="transition ease-out duration-100"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-100"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90">
+                <ul>
+                    <li><a href="{{ route('menu') }}#pizzas">Pizzas</a></li>
+                    <li><a href="{{ route('menu') }}#burgers">Burgers</a></li>
+                    <li><a href="{{ route('menu') }}#bevarages">Bevarages</a></li>
+                </ul>
+            </div>
         </div>
         <div x-data="{open: false}" @mouseleave="open = false" >
             <a class="decoration-none" @mouseover="open = true"  href="#">

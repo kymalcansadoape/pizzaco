@@ -21,3 +21,7 @@ Route::view('/contact', 'main.contact.index')->name('contact');
 
 
 
+
+Auth::routes();
+
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
